@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project Monochrome | Home</title>
+        <link rel="stylesheet" type="text/css" href="./stylesheets/landing-style.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+        <script src="./scripts/landing.js"></script>
+    </head>
+
+    <body>
+        <!-- Image banner (at top of page) -->
+        <div class="head-banner">
+            <div class="navbar">
+                <div class="left">
+                    <div><a href="./index.html"><img src="./images/logo.png" height="45px"></a></div>
+                </div>
+                <div class="right uppercase">
+                    <div><a class="current" href="./index.html">Home</a></div>
+                    <div><a class="border try-now" href="./try-now.html">Try now</a></div>
+                </div>
+            </div>
+            
+            <!-- Text within image banner -->
+            <div class="banner-overlay">
+                <div class="banner-text">
+                    <h1 class="uppercase">Project Monochrome</h1>
+                    <a href=#intro><div class="banner-button uppercase">Learn more</div></a>
+                </div>
+            </div> 
+        </div>
+
+        <!-- Text underneath the image banner -->
+        <div class="cards">
+            <!-- Intro text (without image) -->
+            <div class="card-container text" id="intro">
+                <h3>The future of materials engineering is here.</h3>
+                <p>Project Monochrome is an image analysis model that can calculate the fractions of different phases 
+                    under various lighting conditions.</p>
+            </div>
+
+            <!-- Cards underneath intro text - each card has an image and associated text -->
+            <!-- Image Card -->
+            <div class="card-container images">
+                <img src="./images/area.png" height="315px"></img>
+                <img src="./images/mask.png" height="315px"></img>
+                <img src="./images/grad.png" height="315px"></img>
+            </div>
+
+            <div class="card-container images">
+                    <h3>A histogram of our data found through aggregations on our unique algorithm.</h3>
+                    <img src="./images/histogram.png" height="315px"></img>
+            </div>
+    
+            
+            <!-- Text Card -->
+            <div class="card-container">
+                <div class="text">
+                    <h3>A highly accurate image classification model.</h3>
+                    <p id="info">Project monochrome is an image processing software, capable of determining the 
+                        precise fraction of an image that is light vs dark in color. </p>
+                    <p class="expand" id="text-toggle" onclick="textToggle()">Read more.</p>
+                </div>
+                <a href="./try-now.html"><div class="card-button uppercase">Try it now</div></a>
+            </div>
+
+            <div class="card-container">
+                <div class="card-container text" id="intro" style="padding-top:0px">
+                    <h3>The Creators</h3>
+                </div>
+                <img src="./images/flawnson.jpg" height="315px" style="padding-bottom: 20px;padding-right: 30px;"></img>
+                <img src="./images/agosh.jpg" height="315px" style="padding-bottom: 20px;padding-right: 30px;"></img>
+                <img src="./images/Flawnson Tong.png" style="padding-right: 30px;"></img></a>
+                <img src="./images/agoshsaini.jpg" style="padding-right: 30px;"></img></a>
+                <img src="./images/ryan.jpg" height="315px" style="padding-top: 20px;padding-right: 30px;"></img>
+                <img src="./images/wilson.jpg" height="315px" style="padding-top: 20px;padding-right: 30px;"></img>
+                <img src="./images/ryanli.png" style="padding-right: 30px;padding-top: 20px;"></img>
+                <img src="./images/wilsonwang.png" style="padding-right: 30px;padding-top: 20px;"></img>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="transition"></div>
+            <div class="bottom">
+                <div>Copyright &copy; 2019</div> | <div>Project Monochrome</div> | <div>All rights reserved.</div>
+            </div>
+        </div>
+
+    </body>
+</html>
