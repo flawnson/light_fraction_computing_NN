@@ -17,7 +17,7 @@ function textToggle() {
     }    
 }
 
-/*
+/* 
 function loadPage() {
     const form = document.getElementById("image-form");
     form.addEventListener('submit', e => {
@@ -25,9 +25,13 @@ function loadPage() {
         submitImage(e);
     });
 }
-
+*/
 
 function submitImage(event) {
+    const fileSel = document.getElementById("fileSel");
+    const numSel = document.getElementById("numSel");
+
+    /*
     let file = event.target[0].files[0];
     const formData = new FormData();
     formData.append('file', file);
@@ -47,7 +51,7 @@ function submitImage(event) {
     }).catch(err => {
         console.error(err);
     });
-
+    */
 }
-*/
+
 
