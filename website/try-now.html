@@ -35,8 +35,9 @@
                 <h3>Upload image for analysis</h3>
 
                 <div class="upload">
-                    <form id="image-form">
-                        <input type="file" name="pic" accept="image/*">
+                    <form id="image-form" action="http://localhost:5000/" method="POST">
+                        <input type="text" name="fileSel" value = "input file name" accept="text">
+                        <input type="text" name="numSel" value = "selection #" accept="text">
                         <input id="submit-btn" type="submit">
                     </form>
                 </div>

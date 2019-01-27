@@ -30,7 +30,7 @@ function submitImage(event) {
     const formData = new FormData();
     formData.append('file', file);
 
-    const url = 'http://localhost:5000/process-image';
+    const url = 'http://127.0.0.1:5000/process-image';
     let header = new Headers({
         'Access-Control-Allow-Origin':'*',
         'Content-Type': 'multipart/form-data'
