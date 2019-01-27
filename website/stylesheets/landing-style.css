@@ -1,0 +1,243 @@
+/* General styling that affects entire document */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(29, 29, 29);
+    font-family: Raleway, sans-serif;
+    min-width: 600px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Styling that affects the top banner (image overlay) */
+.head-banner {
+    width: 100%;
+    background-image: url("../images/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-color: rgba(0,0,0,0.7);
+    overflow: hidden;
+}
+
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .left {
+    padding: 20px;
+}
+
+.navbar .right {
+    display: flex;
+    padding: 16px;
+}
+
+.navbar .right div {
+    padding: 14px 16px;
+}
+
+.navbar .right div a{
+    color: rgb(226, 226, 226);
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    font-size: 12.5px;
+    font-weight: 500;
+    transition: 0.15s;
+}
+
+.navbar .right div a:hover{
+    color: white;
+    transition: 0.15s;
+}
+
+.navbar .right div .current {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .right div .try-now:hover {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    transition: 0.15s;
+}
+
+.navbar .right .border {
+    border: solid 2px white;
+    border-radius: 50px;
+    padding: 12px 16px;
+}
+
+/* Styling for text within banner */
+.banner-overlay {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    padding: 120px 150px 200px 150px;
+}
+
+.banner-text {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    width: 70%;
+}
+
+.banner-overlay h1 {
+    margin-top: 0px;
+    font-size: 80px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    line-height: 1.05em;
+    text-shadow: 2px 2px 12px #363636;
+    color: white;
+}
+
+.banner-button {
+    background-color: rgb(255, 255, 255);
+    padding: 12px 24px;
+    color: black;
+    cursor: pointer;
+    border: solid 2px  rgb(255, 255, 255);
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    transition: 0.15s;
+}
+
+.banner-button:hover {
+    background-color: rgb(26, 26, 26);
+    padding: 12px 24px;
+    color: white;
+    cursor: pointer;
+    border: solid 2px rgb(26, 26, 26);
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    transition: 0.15s
+}
+
+/* Styling for all text underneath banner */
+.cards {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    background-color: white;
+    padding-bottom: 60px;
+}
+
+/* Styling for card containers */
+.card-container {
+    width: 60%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 40px 60px;
+}
+
+.images img{
+    padding: 10px;
+}
+
+.text {
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.text h3 {
+    font-size: 32px;
+    color: rgb(48, 48, 48);
+    font-weight: 400;
+}
+
+.text p {
+    margin-top: 0px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: rgb(94, 94, 94);
+    width: 62%;
+}
+
+.text .expand {
+    font-weight: 600;
+    font-style: italic;
+    cursor: pointer;
+}
+
+/* Button Styling */
+.card-button {
+    margin-top: 10px;
+    height: 18px;
+    background-color: rgb(24, 24, 24);
+    padding: 12px 24px;
+    color: white;
+    cursor: pointer;
+    border: solid 2px rgb(24, 24, 24);
+    border-radius: 25px;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    transition: 0.15s;
+}
+
+.card-button:hover {
+    height: 18px;
+    background-color: rgb(194, 194, 194);
+    padding: 12px 24px;
+    color: black;
+    cursor: pointer;
+    border: solid 2px rgb(194, 194, 194);
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    transition: 0.15s;
+}
+
+/* Footer styling */
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    background-color: rgb(29, 29, 29);
+}
+
+.transition {
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(245, 245, 245);
+}
+
+.footer .bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 80px;
+    background-color: rgb(29, 29, 29);
+    color: rgb(109, 109, 109);
+    text-align: center;
+}
+
+.footer .bottom div {
+    margin-bottom: -5px;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: 300;
+}
