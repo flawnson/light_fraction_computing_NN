@@ -1,20 +1,23 @@
-/* General styling that affects entire document */
 body {
     margin: 0;
     padding: 0;
     background-color: rgb(29, 29, 29);
     font-family: Raleway, sans-serif;
-    min-width: 800px;
+    min-width: 600px;
 }
 
 .uppercase {
     text-transform: uppercase;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Styling that affects the top banner (image overlay) */
 .head-banner {
     width: 100%;
-    background-image: url("../images/coding-pic2.jpeg");
+    background-image: url("../images/header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
@@ -47,6 +50,7 @@ body {
     text-decoration: none;
     font-size: 12.5px;
     font-weight: 500;
+    transition: 0.15s;
 }
 
 .navbar .right div a:hover{
@@ -59,7 +63,7 @@ body {
     text-decoration: none;
 }
 
-.navbar .right div .donate:hover {
+.navbar .right div .try-now:hover {
     color: black;
     background-color: white;
     text-decoration: none;
@@ -84,47 +88,84 @@ body {
     display: flex;
     justify-content: center;
     flex-flow: wrap;
-    width: 50%;
-}
-
-.banner-overlay h2 {
-    font-size: 24px;
-    text-align: center;
-    font-style: italic;
-    font-weight: 300;
-    color: white;
+    width: 70%;
 }
 
 .banner-overlay h1 {
     margin-top: 0px;
-    font-size: 70px;
+    font-size: 80px;
     text-align: center;
     font-weight: 700;
     letter-spacing: 0.05em;
-    line-height: 1em;
+    line-height: 1.05em;
+    text-shadow: 2px 2px 12px #363636;
     color: white;
 }
 
-.banner-button {
-    background-color: rgb(0, 111, 202);
-    padding: 12px 24px;
-    color: white;
-    cursor: pointer;
-    border: solid 2px rgb(0, 111, 202);
-    border-radius: 25px;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.1em;
+/* Styling for all text underneath banner */
+.cards {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    background-color: white;
+    padding-bottom: 60px;
 }
 
-.banner-button:hover {
-    background-color: rgb(0, 86, 156);
-    padding: 12px 24px;
-    color: white;
-    cursor: pointer;
-    border: solid 2px rgb(0, 86, 156);
-    border-radius: 25px;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.1em;
+/* Styling for card containers */
+.card-container {
+    width: 60%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 40px 60px;
+}
+
+.text {
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.text h3 {
+    font-size: 32px;
+    color: rgb(48, 48, 48);
+    font-weight: 400;
+}
+
+.upload {
+    width: 100%;
+}
+
+/* Footer styling */
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    background-color: rgb(29, 29, 29);
+}
+
+.transition {
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(245, 245, 245);
+}
+
+.footer .bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 80px;
+    background-color: rgb(29, 29, 29);
+    color: rgb(109, 109, 109);
+    text-align: center;
+}
+
+.footer .bottom div {
+    margin-bottom: -5px;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: 300;
 }
