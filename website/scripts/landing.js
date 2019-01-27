@@ -16,3 +16,35 @@ function textToggle() {
         textButton.innerHTML = "Read more.";
     }    
 }
+
+function loadPage() {
+    const form = document.getElementById("image-form");
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        submitImage(e);
+    });
+}
+
+function submitImage(event) {
+    let file = event.target[0].files[0];
+    const formData = new FormData();
+    formData.append('file', file);
+
+    const url = 'http://127.0.0.1:5000/process-image';
+    let header = new Headers({
+        'Access-Control-Allow-Origin':'*',
+        'Content-Type': 'multipart/form-data'
+    });
+
+    fetch(url, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formData
+    }).then(response => {
+        console.log(response);
+    }).catch(err => {
+        console.error(err);
+    });
+    
+
+}
