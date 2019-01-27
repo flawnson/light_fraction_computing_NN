@@ -4,9 +4,10 @@
         <title>Project Monochrome | Upload</title>
         <link rel="stylesheet" type="text/css" href="./stylesheets/functionality-style.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+        <script src="scripts/landing.js"></script>
     </head>
 
-    <body>
+    <body onload="loadPage()">
         <!-- Image banner (at top of page) -->
         <div class="head-banner">
             <div class="navbar">
@@ -34,9 +35,9 @@
                 <h3>Upload image for analysis</h3>
 
                 <div class="upload">
-                    <form action="/action_page.php">
+                    <form id="image-form">
                         <input type="file" name="pic" accept="image/*">
-                        <input type="submit">
+                        <input id="submit-btn" type="submit">
                     </form>
                 </div>
             </div>
