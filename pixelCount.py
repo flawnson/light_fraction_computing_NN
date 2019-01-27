@@ -1,10 +1,9 @@
 import numpy as np
 from PIL import Image
 import os
+import matplotlib.pyplot as plt
 
 def ratioBW(fileName):
-    #checking if file exists
-    if os.path.isfile('./'+ fileName) == True:
         #converting image to array
         img = Image.open(fileName).convert('1')
         imgArr = np.array(img);
@@ -19,14 +18,11 @@ def ratioBW(fileName):
          
         #Return [white, black, total]
         return [white, black, total]    
-    else:
-        #returns if file Does not exist in directory
-        return False
+
     
     
 def ratioBWImported(fileName):
-    #checking if file exists
-    if os.path.isfile('./'+ fileName) == True:
+
         #converting image to array
         img = Image.open(fileName).convert('1')
         imgArr = np.array(img);
@@ -41,10 +37,8 @@ def ratioBWImported(fileName):
          
         #Return [white, black, total]
         return [white, black, total]    
-    else:
-        #returns if file Does not exist in directory
-        return False
-    
+
+
 
 '''
 fileName1 = input('fileName1: ')
