@@ -25,6 +25,7 @@ function loadPage() {
     });
 }
 
+/*
 function submitImage(event) {
     let file = event.target[0].files[0];
     const formData = new FormData();
@@ -45,6 +46,6 @@ function submitImage(event) {
     }).catch(err => {
         console.error(err);
     });
-    
 
 }
+*/
