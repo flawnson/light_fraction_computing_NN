@@ -17,6 +17,7 @@ function textToggle() {
     }    
 }
 
+/*
 function loadPage() {
     const form = document.getElementById("image-form");
     form.addEventListener('submit', e => {
@@ -25,7 +26,7 @@ function loadPage() {
     });
 }
 
-/*
+
 function submitImage(event) {
     let file = event.target[0].files[0];
     const formData = new FormData();
