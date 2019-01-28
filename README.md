@@ -15,7 +15,7 @@ Our team of 4 consisted of @liryan914, @wangwillson1, @agosh-saini, and @flawnso
 Initial challenges involved thresholding, specifically to solve the problem of image gradients presented by Target 3. There was some difficulty in choosing between edge vs shape detection when attempting to solve Target 4.
 
 ## Sample Images
-(image_grad_82.png) (image_grad_83.png) (image_grad_86.png)
+![](image_grad_82.png) ![](image_grad_83.png) ![](image_grad_86.png)
 
 ## Test results
 Target 1 tests acheived nearly perfect accuracy, after thresholding and binarization
